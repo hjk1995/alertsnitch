@@ -20,6 +20,9 @@ type ConnectionArgs struct {
 // Connect connects to a backend database
 func Connect(backend string, args ConnectionArgs) (internal.Storer, error) {
 	switch backend {
+	case "vertica":
+		return connectVertica(args)
+
 	case "mysql":
 		return connectMySQL(args)
 

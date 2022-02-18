@@ -12,4 +12,5 @@ require (
 	github.com/prometheus/procfs v0.0.0-20190104112138-b1a0a9a36d74 // indirect
 	github.com/sirupsen/logrus v1.2.0
 	github.com/stretchr/testify v1.3.0
+	github.com/vertica/vertica-sql-go v1.2.1
 )
